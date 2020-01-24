@@ -70,6 +70,9 @@ BOARD_USES_QCNE := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 
+# Charger Mode
+TARGET_PIXEL_CHARGE_ANIM := true
+
 # Display
 TARGET_USES_HWC2 := true
 
