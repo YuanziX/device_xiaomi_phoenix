@@ -72,6 +72,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PACKAGES += \
 #    GCamGOPrebuilt
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
