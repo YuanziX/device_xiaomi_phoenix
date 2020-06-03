@@ -14,3 +14,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Set stock DPI
 ro.sf.lcd_density=440
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
