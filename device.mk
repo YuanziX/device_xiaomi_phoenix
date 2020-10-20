@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
