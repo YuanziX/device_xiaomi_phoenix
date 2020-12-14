@@ -98,9 +98,7 @@ PRODUCT_PACKAGES += \
     NotchNoFillOverlay
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosip
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
