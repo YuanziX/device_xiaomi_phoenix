@@ -1,10 +1,20 @@
 [
   {
-    "repository": "kernel_xiaomi_phoenix",
-    "target_path": "kernel/xiaomi/phoenix"
+    "repository": "StarkDroid/vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "11",
+    "remote": "github"
   },
   {
-    "repository": "proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "repository": "AOSiP-Devices/kernel_xiaomi_phoenix",
+    "target_path": "kernel/xiaomi/phoenix",
+    "branch": "eleven",
+    "remote": "github"
+  },
+  {
+    "repository": "kubersharma001/android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt",
+    "branch": "master",
+    "remote": "github"
   }
 ]
