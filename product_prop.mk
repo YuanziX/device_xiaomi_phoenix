@@ -4,13 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # ADB
-ifeq ($(TARGET_BUILD_VARIANT),userdebug)
-# /vendor/default.prop is force-setting ro.adb.secure=1
-# Get rid of that by overriding it in /product on eng builds
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.usb.config=mtp,adb \
     ro.secure=0 \
     ro.adb.secure=0
-endif
+
+# Audio
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    vendor.audio.feature.a2dp_offload.enable=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
