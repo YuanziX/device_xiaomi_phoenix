@@ -67,8 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
+    charger_res_images
 
 # Device Settings
 PRODUCT_PACKAGES += \
