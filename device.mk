@@ -63,8 +63,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Camera
-#PRODUCT_PACKAGES += \
-#    GCamGOPrebuilt
+PRODUCT_PACKAGES += \
+    GCamGo
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
