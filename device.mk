@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    GCamGOPrebuilt \
+    GCamGo \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # CNE
