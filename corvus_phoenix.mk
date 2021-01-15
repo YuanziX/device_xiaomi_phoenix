@@ -14,6 +14,9 @@ IS_PHONE := true
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
+# Faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit some common Corvus stuff.
 $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
