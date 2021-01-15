@@ -11,3 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=Trishiraj
+
+# Set stock DPI
+ro.sf.lcd_density=440
