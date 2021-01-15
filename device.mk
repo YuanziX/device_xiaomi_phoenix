@@ -65,8 +65,8 @@ PRODUCT_COPY_FILES += \
 #    BluetoothQti
 
 # Camera
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
+#PRODUCT_PACKAGES += \
+#    GCamGOPrebuilt
 
 # Device Settings
 PRODUCT_PACKAGES += \
