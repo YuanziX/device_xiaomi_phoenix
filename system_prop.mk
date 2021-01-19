@@ -17,3 +17,6 @@ ro.sf.lcd_density=440
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Hack for Youtube
+sys.display-size=3840x2160
