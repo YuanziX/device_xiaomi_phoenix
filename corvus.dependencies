@@ -6,15 +6,9 @@
     "remote": "github"
   },
   {
-    "repository": "AOSiP-Devices/kernel_xiaomi_phoenix",
+    "repository": "StarkDroid/kernel_xiaomi_phoenix",
     "target_path": "kernel/xiaomi/phoenix",
     "branch": "eleven",
-    "remote": "github"
-  },
-  {
-    "repository": "kubersharma001/android_packages_apps_GCamGOPrebuilt",
-    "target_path": "packages/apps/GCamGOPrebuilt",
-    "branch": "master",
     "remote": "github"
   }
 ]
