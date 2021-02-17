@@ -12,9 +12,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=Trishiraj
 
-# Set stock DPI
-#ro.sf.lcd_density=440
-
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
@@ -23,9 +20,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.display-size=3840x2160
 
-# Set stock DPI
+# Enable hwc for wfd
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=440
+    debug.sf.enable_hwc_vds=1
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
