@@ -118,7 +118,7 @@ public class DevicePreferenceFragment extends PreferenceFragment {
                     } else if (KEY_PILL_STYLE_NOTCH.equals(key)) {
                         try {
                             mOverlayService.setEnabled(
-                                    OVERLAY_NO_FILL_PACKAGE, (boolean) value, 0);
+                                    OVERLAY_NO_FILL_PACKAGE, !(boolean) value, 0);
                         } catch (RemoteException e) {
                             // We can do nothing
                         }
