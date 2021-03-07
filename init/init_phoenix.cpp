@@ -60,16 +60,6 @@ void property_override(char const prop[], char const value[], bool add = true) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_multifp(char const buildfp[], char const systemfp[],
-	char const bootimagefp[], char const vendorfp[], char const odmfp[], char const value[])
-{
-	property_override(buildfp, value);
-	property_override(systemfp, value);
-	property_override(bootimagefp, value);
-	property_override(vendorfp, value);
-        property_override(odmfp, value);
-}
-
 void vendor_load_properties() {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
@@ -94,16 +84,13 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "device", "phoenix");
             set_ro_product_prop(source, "model", "Redmi K30");
         }
+        property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys");
     } else if (region == "INDIA") {
         for (const auto &source : ro_props_default_source_order) {
             set_ro_product_prop(source, "brand", "POCO");
             set_ro_product_prop(source, "device", "phoenixin");
             set_ro_product_prop(source, "model", "POCO X2");
         }
+        property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.6.0.QGHINXM release-keys");
     }
-
-    property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
-    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
-	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
 }
