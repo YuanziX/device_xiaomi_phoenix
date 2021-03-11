@@ -65,9 +65,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGo
 
-PRODUCT_PACKAGES += \
-	libmedia_jni_shim
-
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
