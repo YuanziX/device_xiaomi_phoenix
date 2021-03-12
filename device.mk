@@ -66,6 +66,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGo
 
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64 \
+    libxml2
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
