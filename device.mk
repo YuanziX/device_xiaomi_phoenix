@@ -153,7 +153,6 @@ PRODUCT_PACKAGES += \
     GCamGo \
     vendor.qti.hardware.camera.device@1.0.vendor
 
-# CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
