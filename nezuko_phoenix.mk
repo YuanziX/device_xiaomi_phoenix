@@ -24,10 +24,4 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.nezuko.cpu=SD730G
 
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
-BUILD_DESCRIPTION := redfin-user 11 RQ2A.210405.005 7181113 release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
