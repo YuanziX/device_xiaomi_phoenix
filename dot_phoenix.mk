@@ -6,22 +6,19 @@
 
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Nezuko OS stuff.
-$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
+# Inherit some common Dot OS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nezuko_phoenix
+PRODUCT_NAME := dot_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Nezuko OS Properties
+# Dot OS Properties
 TARGET_BOOT_ANIMATION_RES := 1080
-NEZUKO_MAINTAINER := AtomicX
-NEZUKO_BUILD_TYPE := OFFICIAL
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.nezuko.cpu=SD730G
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
