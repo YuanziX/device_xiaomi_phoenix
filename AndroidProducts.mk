@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_phoenix.mk
+    $(LOCAL_DIR)/radiant_phoenix.mk
