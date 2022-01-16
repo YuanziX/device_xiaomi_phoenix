@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_phoenix.mk
+    $(LOCAL_DIR)/radiant_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    radiant_phoenix-user \
+    radiant_phoenix-userdebug \
+    radiant_phoenix-eng
